@@ -4,9 +4,19 @@
     <title>Creating and Inserting DOM Elements</title>
   </head>
   <script type="application/javascript">
+    // Create a new h1 element and assign it to the newHeader variable
+    var newHeader = document.createElement("h1");
+
+    // Get the main element
+    var main = document.getElementById("main");
+
+    // Remove the main element from the DOM
+    main.parentNode.removeChild(main);
+
+    // Append the new h1 element to the body element
+    document.body.append(newHeader);
   </script>
   <body>
-    <main id="main"></main>
     <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
